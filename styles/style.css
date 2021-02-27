@@ -1,6 +1,4 @@
 .page {
-  position: relative;
-  display: block;
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
@@ -9,12 +7,13 @@
 }
 
 .header {
-  height: 100vh;
+    height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
   background-color: #f2f2f2;
   display: flex;
+  position: relative;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -82,3 +81,46 @@
   width: 765px;
   height: 608px;
   }
+
+.two-columns {
+  margin: 100px auto;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  width: 175px;
+}
+
+.two-columns__title {
+  margin: 0;
+  color: #2f80ed;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+margin: 0;
+line-height: 34px;
+font-size: 24px;
+font-weight: normal;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
+}
+
+.two-columns__span-accent:after {
+  content: " ";
+}
+
+.two-columns__paragraph_margin {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
