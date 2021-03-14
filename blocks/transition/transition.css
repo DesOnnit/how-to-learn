@@ -1,0 +1,12 @@
+@keyframes transition {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+
+.transition:hover {
+  animation: transition 2s linear forwards;
+}
