@@ -8,5 +8,5 @@
 }
 
 .transition:hover {
-  animation: transition 2s linear forwards;
+  animation: transition 1s linear forwards;
 }
